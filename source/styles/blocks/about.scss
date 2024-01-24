@@ -37,10 +37,11 @@
   height: 590px;
   margin-right: auto;
   margin-left: auto;
-  background-color: $background-container;
-  background-repeat: no-repeat;
-  background-position: center center;
-  transition: background-size 3.7s ease-in-out;
+  overflow: hidden;
+  // background-color: $background-container;
+  // background-repeat: no-repeat;
+  // background-position: center center;
+  // transition: background-size 3.7s ease-in-out;
 
   &:not(:last-child) {
     margin-bottom: 40rem;
@@ -51,17 +52,21 @@
     display: none;
   }
 
-  &:hover {
-    background-size: auto 650px;
-  }
+  // &:hover {
+  //   background-size: auto 650px;
+  // }
 
   @media (min-width: $tablet-width) {
-    width: 688px;
+    width: 688rem;
     height: 590px;
 
-    &:hover {
-      background-size: 688px auto;
-    }
+    // &:hover {
+    //   background-size: 688px auto;
+    // }
+  }
+
+  @media (min-width: 806px) {
+    width: 726px;
   }
 
   @media (min-width: $desktop-width) {
@@ -85,44 +90,48 @@
       grid-row: 2/4;
     }
 
-    &:hover {
-      background-size: 660px auto;
-    }
+    // &:hover {
+    //   background-size: 660px auto;
+    // }
   }
 }
 
-.about__item--first {
-  background-image: url("../../images/about-1.jpg");
-}
-
-.about__item--second {
-  background-image: url("../../images/about-2.jpg");
-}
-
-.about__item--third {
-  background-image: url("../../images/about-3.jpg");
-}
-
-.about__item--fourth {
-  background-image: url("../../images/about-4.jpg");
-}
-
-// .about__photo {
-//   width: 348rem;
-//   height: 100%;
-//   object-fit: none;
-//   border-radius: 20px;
-//   transition: transform 0.3s ease;
-
-//   @media (min-width: $tablet-width) {
-//     width: 688rem;
-//   }
-
-//   @media (min-width: 806px) {
-//     width: 726px;
-//   }
-
-//   @media (min-width: $desktop-width) {
-//     width: 660rem;
-//   }
+// .about__item--first {
+//   background-image: url("../../images/about-1.jpg");
 // }
+
+// .about__item--second {
+//   background-image: url("../../images/about-2.jpg");
+// }
+
+// .about__item--third {
+//   background-image: url("../../images/about-3.jpg");
+// }
+
+// .about__item--fourth {
+//   background-image: url("../../images/about-4.jpg");
+// }
+
+.about__photo {
+  width: 348rem;
+  height: 100%;
+  object-fit: none;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+
+  @media (min-width: $tablet-width) {
+    width: 688rem;
+  }
+
+  @media (min-width: 806px) {
+    width: 726px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 660rem;
+  }
+}
+
+.about__photo:hover {
+  transform: scale(1.1);
+}
