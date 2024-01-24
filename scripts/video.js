@@ -1,1 +1,1 @@
-var e=document.querySelector(".favorite-coffee__video"),o=document.querySelector(".favorite-coffee"),t="../images/favorite-coffee.jpg";e.onended=()=>{e.style.display="none",o.style.backgroundImage=`url(${t})`};
+var e=document.querySelector(".favorite-coffee__video"),o=document.querySelector(".favorite-coffee"),t="images/favorite-coffee.jpg";e.onended=()=>{e.style.display="none",o.style.backgroundImage=`url(${t})`};
