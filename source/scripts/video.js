@@ -2,7 +2,7 @@
 
 const video = document.querySelector('.favorite-coffee__video');
 const favoriteCoffeeBlock = document.querySelector('.favorite-coffee');
-const pathToPicture = '../images/favorite-coffee.jpg';
+const pathToPicture = 'images/favorite-coffee.jpg';
 
 video.onended = () => {
   video.style.display = 'none';
