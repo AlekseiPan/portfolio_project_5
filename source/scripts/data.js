@@ -42,7 +42,7 @@ const coffee = [
   },
   {
     url: 'images/menu/coffee/latte-macchiato.jpg',
-    name: 'Latte-macchiato',
+    name: 'Latte macchiato',
     description: 'Espresso with frothed milk and chocolate',
     price: '$5.50',
   },
