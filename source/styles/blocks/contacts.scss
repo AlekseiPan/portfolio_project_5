@@ -1,0 +1,48 @@
+.contacts__header {
+  font-size: 24rem;
+  color: $text-light;
+  margin: 0 0 40rem;
+}
+
+.contacts__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contacts__item {
+  line-height: 1.5;
+  color: $text-light;
+
+  &:not(:last-child) {
+    margin-bottom: 20rem;
+  }
+}
+
+.contacts__item--location a,
+.contacts__item--phone a,
+.contacts__item--schedule {
+  padding: 0 0 4rem 28rem;
+  background-repeat: no-repeat;
+}
+
+.contacts__item--location a {
+  background-image: url(../../images/icons/location.svg);
+  border-bottom: 2px solid $background-container;
+  transition: border-bottom-color 0.7s ease-in-out;
+}
+
+.contacts__item--phone a {
+  background-image: url(../../images/icons/phone.svg);
+  border-bottom: 2px solid $background-container;
+  transition: border-bottom-color 0.7s ease-in-out;
+}
+
+.contacts__item--schedule {
+  background-image: url(../../images/icons/clock.svg);
+}
+
+.contacts__item--location a:hover,
+.contacts__item--phone a:hover {
+  border-bottom-color: $text-light;
+}

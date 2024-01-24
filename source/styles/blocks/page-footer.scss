@@ -1,0 +1,33 @@
+.page-footer {
+  background-color: $background-container;
+  border-radius: 40px;
+  padding: 60rem 16rem;
+
+  @media (min-width: $tablet-width) {
+    padding: 100rem 60rem;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 100rem;
+    row-gap: 50rem;
+  }
+}
+
+.page-footer__slogan {
+  display: block;
+  font-size: 32rem;
+  color: $text-light;
+  margin-bottom: 40rem;
+
+  i {
+    color: $text-accent;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 60rem;
+  }
+}

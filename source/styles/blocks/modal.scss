@@ -1,0 +1,160 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  overflow-y: auto;
+}
+
+.modal__container {
+  width: 342rem;
+  border-radius: 40px;
+  background-color: $background-body;
+  padding: 16rem;
+
+  @media (min-width: $tablet-width) {
+    width: 688rem;
+    display: grid;
+    grid-template-columns: 310rem 326rem;
+    gap: 20rem;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800rem;
+    grid-template-columns: 310rem 438rem;
+  }
+}
+
+.modal__picture {
+  display: none;
+  border-radius: 40px;
+  object-fit: none;
+
+  @media (min-width: 416px) {
+    object-fit: fill;
+  }
+
+  @media (min-width: $tablet-width) {
+    object-fit: none;
+    display: block;
+  }
+
+  @media (min-width: 842px) {
+    object-fit: fill;
+  }
+
+  @media (min-width: $desktop-width) {
+    object-fit: none;
+  }
+}
+
+.modal__name {
+  font-size: 24rem;
+  font-weight: 600;
+  margin: 0 0 12rem;
+}
+
+.modal__description {
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0 0 20rem;
+}
+
+.modal__size,
+.modal__additives {
+  display: block;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 8rem;
+}
+
+.modal__size-list,
+.modal__additives-list {
+  list-style: none;
+  padding: 0 0 20rem;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8rem;
+}
+
+.modal__size-button,
+.modal__additives-button {
+  font-weight: 400;
+  line-height: 1.5;
+  border: 1rem solid $border-light;
+  padding: 8rem 16rem 8rem 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  cursor: pointer;
+  transition: 0.7s;
+
+  &:hover,
+  &--current {
+    background-color: $background-container;
+  }
+}
+
+.modal__size-letter,
+.modal__additives-number {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  background-color: $border-light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.7s;
+}
+
+.modal__size-button:hover .modal__size-signature,
+.modal__additives-button:hover .modal__additives-signature,
+.modal__size-button--current .modal__size-signature,
+.modal__additives-button--current .modal__additives-signature {
+  color: $text-light;
+}
+
+.modal__size-button:hover .modal__size-letter,
+.modal__size-button--current .modal__size-letter,
+.modal__additives-button:hover .modal__additives-number,
+.modal__additives--current:hover .modal__additives-number {
+  background-color: $background-body;
+}
+
+.modal__total {
+  font-size: 24rem;
+  padding-bottom: 20rem;
+  border-bottom: 1rem solid $border-light;
+  margin-bottom: 12rem;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20rem;
+}
+
+.modal__warning {
+  font-size: 10rem;
+  line-height: 1.4;
+  padding-left: 24rem;
+  margin: 0 0 32rem;
+  background-image: url(../../images/icons/warning.svg);
+  background-repeat: no-repeat;
+  background-size: 16rem 16rem;
+}
+
+.modal__close {
+  width: 100%;
+  padding: 10rem;
+  border: 1rem solid $border-dark;
+  cursor: pointer;
+  transition: 0.7s;
+
+  &:hover {
+    background-color: $background-container;
+    color: $text-light;
+  }
+}

@@ -1,0 +1,41 @@
+.social-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12rem;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 100rem;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.social-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60rem;
+  height: 60rem;
+  border: 1rem solid $text-light;
+  border-radius: 50%;
+
+  &:hover {
+    background-color: $background-body;
+    border: none;
+  }
+}
+
+.social-list__link svg {
+  width: 24rem;
+  height: 24rem;
+  transition: 0.7s;
+}
+
+.social-list__link:hover svg {
+  stroke: $text-dark;
+}

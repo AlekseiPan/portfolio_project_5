@@ -1,0 +1,84 @@
+.favorite-coffee {
+  position: relative;
+  border-radius: 40px;
+  background-color: $background-container;
+  background-position: center, center;
+  padding: 60rem 16rem;
+  margin-bottom: 100rem;
+
+  @media (min-width: $tablet-width) {
+    padding: 100rem 98rem 100rem 60rem;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 730rem;
+    padding-left: 100rem;
+  }
+}
+
+.favorite-coffee__content {
+  position: relative;
+  z-index: 1;
+}
+
+.favorite-coffee__slogan {
+  display: block;
+  font-size: 42rem;
+  line-height: 1.15;
+  color: $text-light;
+  margin-bottom: 40rem;
+
+  i {
+    color: $text-accent;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 72rem;
+    line-height: 1.05;
+  }
+}
+
+.favorite-coffee__description {
+  line-height: 1.5;
+  font-weight: 400;
+  color: $text-light;
+  margin: 0 0 40rem;
+}
+
+.favorite-coffee__button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: 200rem;
+  padding: 20rem;
+  text-align: center;
+
+  &:hover {
+    gap: 8rem;
+  }
+}
+
+.favorite-coffee__icon {
+  visibility: hidden;
+  width: 0;
+  height: 20rem;
+  opacity: 0;
+  transition: width 0.35s ease-in-out, opacity 0.35s ease-in-out;
+}
+
+.favorite-coffee__button:hover .favorite-coffee__icon {
+  visibility: inherit;
+  width: 20rem;
+  opacity: 1;
+}
+
+.favorite-coffee__video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  border-radius: 40px;
+}

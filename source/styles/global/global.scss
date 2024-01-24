@@ -1,0 +1,47 @@
+/* здесь используйте глобальные селекторы img, body, html и так далее*/
+html {
+  scroll-behavior: smooth;
+  font-size: calc(1vw / 3.8);
+
+  @media (min-width: 768px) {
+    font-size: calc(1vw / 7.68);
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 1px;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.7s;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}

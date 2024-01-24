@@ -1,0 +1,213 @@
+.main-nav {
+  font-size: 32rem;
+
+  @media (min-width: $desktop-width) {
+    font-size: 16rem;
+    line-height: 1.5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10rem;
+    padding-bottom: 20rem;
+  }
+}
+
+.main-nav__logo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10rem;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20rem;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+    margin-right: 10rem;
+  }
+}
+
+.main-nav__logo-shortcut {
+  display: flex;
+}
+
+.main-nav__logo-shortcut svg {
+  width: 100rem;
+  height: 60rem;
+}
+
+.main-nav__list {
+  list-style: none;
+  padding: 56rem 0 90rem;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 40rem;
+    row-gap: 10rem;
+  }
+}
+
+.main-nav__item {
+  text-align: center;
+}
+
+.main-nav__item:not(:last-child) {
+  margin-bottom: 50rem;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.main-nav__link {
+  display: inline-block;
+  padding: 4rem 0;
+  border-bottom: 2rem solid $background-body;
+
+  &:hover {
+    border-bottom-color: $text-dark;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 6rem 0 4rem;
+  }
+}
+
+.main-nav__button-container {
+  text-align: center;
+}
+
+.main-nav__button-menu {
+  display: inline-block;
+  padding: 4rem 56rem 4rem 0;
+  margin-bottom: 178rem;
+  background-image: url("../../images/icons/coffee-cup.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 40rem 40rem;
+  border-bottom: 2rem solid $background-body;
+
+  &--current,
+  &:hover {
+    border-bottom-color: $text-dark;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 378rem;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 6rem 28rem 4rem 0;
+    margin: 0;
+    background-position: right center;
+    background-size: 20rem 20rem;
+  }
+}
+
+.main-nav__toggle {
+  position: relative;
+  background-color: transparent;
+  border: 1rem solid $border-dark;
+  border-radius: 50%;
+  width: 44rem;
+  height: 44rem;
+  padding: 10rem;
+  cursor: pointer;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav__toggle::before,
+.main-nav__toggle::after {
+  content: "";
+  position: absolute;
+  width: 16rem;
+  height: 1.5rem;
+  left: 14rem;
+  background-color: $text-dark;
+  transition: transform 0.7s ease-in-out;
+}
+
+.main-nav__toggle::before {
+  top: 16.5rem;
+}
+
+.main-nav__toggle::after {
+  bottom: 16.5rem;
+}
+
+.main-nav--opened .main-nav__toggle::before {
+  transform: translateY(3.5rem) rotate(45deg);
+}
+.main-nav--opened .main-nav__toggle::after {
+  transform: translateY(-3.5rem) rotate(-45deg);
+}
+
+// .main-nav--opened .main-nav__toggle::before,
+// .main-nav--opened .main-nav__toggle::after {
+//   content: "";
+//   position: absolute;
+//   width: 16rem;
+//   height: 1.5rem;
+//   top: 20.25rem;
+//   left: 14rem;
+//   background-color: $text-dark;
+// }
+
+// .main-nav--opened .main-nav__toggle::before {
+//   transform: rotate(45deg);
+// }
+
+// .main-nav--opened .main-nav__toggle::after {
+//   transform: rotate(-45deg);
+// }
+
+// .main-nav--closed .main-nav__menu {
+//   display: none;
+
+//   @media (min-width: $desktop-width) {
+//     display: flex;
+//   }
+// }
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__menu {
+  display: block;
+}
+
+.main-nav--opened .main-nav__menu {
+  transform: translate(-100vw);
+}
+
+// .main-nav--closed .main-nav__menu {
+//   transform: translate(100vw);
+// }
+
+.main-nav__menu {
+  position: fixed;
+  z-index: 2;
+  right: -100vw;
+  width: 100vw;
+  background-color: $background-body;
+  transition: transform 0.7s ease-in-out;
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    z-index: 0;
+    width: 894rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 360rem;
+  }
+}
