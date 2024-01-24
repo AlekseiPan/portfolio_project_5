@@ -89,13 +89,13 @@
   width: 348rem;
   height: 348rem;
   margin: 0 auto;
-  background-image: url(../../images/mobile/offer-decoration.png);
+  background-image: url("../../images/mobile/offer-decoration.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 
   @media (min-width: $tablet-width) {
     width: 630rem;
     height: 630rem;
-    background-image: url(../../images/tablet/offer-decoration.png);
+    background-image: url("../../images/tablet/offer-decoration.png");
   }
 }

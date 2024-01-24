@@ -47,7 +47,7 @@ const coffee = [
     price: '$5.50',
   },
   {
-    url: '../images/menu/coffee/coffee-with-cognac.jpg',
+    url: 'images/menu/coffee/coffee-with-cognac.jpg',
     name: 'Coffee with cognac',
     description: 'Fragrant black coffee with cognac and whipped cream',
     price: '$6.50',

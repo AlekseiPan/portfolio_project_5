@@ -1,6 +1,7 @@
 .about {
   padding-bottom: 100rem;
 }
+
 .about__description {
   font-size: 32rem;
   line-height: 1.25;
@@ -90,26 +91,18 @@
   }
 }
 
-.about__item--first,
-.about__item--second,
-.bout__item--third,
-.about__item--fourth {
-  @media (min-width: $tablet-width) {
-  }
-
-  @media (min-width: $desktop-width) {
-  }
-}
-
 .about__item--first {
   background-image: url("../../images/about-1.jpg");
 }
+
 .about__item--second {
   background-image: url("../../images/about-2.jpg");
 }
+
 .about__item--third {
   background-image: url("../../images/about-3.jpg");
 }
+
 .about__item--fourth {
   background-image: url("../../images/about-4.jpg");
 }

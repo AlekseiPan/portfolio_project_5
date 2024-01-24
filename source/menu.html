@@ -73,7 +73,10 @@
             </li>
           </ul>
           <div class="main-nav__button-container">
-            <a class="main-nav__button-menu main-nav__button-menu--current"
+            <a
+              class="main-nav__button-menu main-nav__button-menu--menu main-nav__button-menu--current"
+              href=""
+              onclick="return false"
               >Menu</a
             >
           </div>
@@ -92,15 +95,22 @@
         <div class="assortment__buttons">
           <button
             class="assortment__button assortment__button--coffee assortment__button--current"
+            type="button"
           >
             <span class="assortment__icon assortment__icon--coffee"></span>
             <span>Coffee</span>
           </button>
-          <button class="assortment__button assortment__button--tea">
+          <button
+            class="assortment__button assortment__button--tea"
+            type="button"
+          >
             <span class="assortment__icon assortment__icon--tea"></span>
             <span>Tea</span>
           </button>
-          <button class="assortment__button assortment__button--dessert">
+          <button
+            class="assortment__button assortment__button--dessert"
+            type="button"
+          >
             <span class="assortment__icon assortment__icon--dessert"></span>
             <span>Dessert</span>
           </button>
@@ -129,7 +139,10 @@
           </template>
         </ul>
         <div class="assortment__load-container">
-          <button class="assortment__load assortment__load--hidden">
+          <button
+            class="assortment__load assortment__load--hidden"
+            type="button"
+          >
             <svg
               class="assortment__arrow"
               width="24"
@@ -217,6 +230,7 @@
             <li class="modal__size-item">
               <button
                 class="button modal__size-button modal__size-button--small button modal__size-button--current"
+                type="button"
               >
                 <span class="modal__size-letter">S</span>
                 <span
@@ -229,6 +243,7 @@
             <li class="modal__size-item">
               <button
                 class="button modal__size-button modal__size-button--medium"
+                type="button"
               >
                 <span class="modal__size-letter">M</span>
                 <span
@@ -241,6 +256,7 @@
             <li class="modal__size-item">
               <button
                 class="button modal__size-button modal__size-button--large"
+                type="button"
               >
                 <span class="modal__size-letter">L</span>
                 <span
@@ -256,6 +272,7 @@
             <li class="modal__additives-item">
               <button
                 class="button modal__additives-button modal__additives-button--first"
+                type="button"
               >
                 <span class="modal__additives-number">1</span>
                 <span
@@ -266,6 +283,7 @@
             <li class="modal__additives-item">
               <button
                 class="button modal__additives-button modal__additives-button--second"
+                type="button"
               >
                 <span class="modal__additives-number">2</span>
                 <span
@@ -276,6 +294,7 @@
             <li class="modal__additives-item">
               <button
                 class="button modal__additives-button modal__additives-button--third"
+                type="button"
               >
                 <span class="modal__additives-number">3</span>
                 <span
@@ -293,7 +312,7 @@
             price and place your order. Earn loyalty points and enjoy your
             favorite coffee with up to 20% discount.
           </p>
-          <button class="button modal__close">Close</button>
+          <button class="button modal__close" type="button">Close</button>
         </div>
       </div>
     </div>

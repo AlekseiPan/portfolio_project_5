@@ -30,6 +30,11 @@
   display: flex;
 }
 
+.main-nav__logo-shortcut--home {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 .main-nav__logo-shortcut svg {
   width: 100rem;
   height: 60rem;
@@ -109,6 +114,11 @@
   }
 }
 
+.main-nav__button-menu--menu {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 .main-nav__toggle {
   position: relative;
   background-color: transparent;
@@ -146,36 +156,10 @@
 .main-nav--opened .main-nav__toggle::before {
   transform: translateY(3.5rem) rotate(45deg);
 }
+
 .main-nav--opened .main-nav__toggle::after {
   transform: translateY(-3.5rem) rotate(-45deg);
 }
-
-// .main-nav--opened .main-nav__toggle::before,
-// .main-nav--opened .main-nav__toggle::after {
-//   content: "";
-//   position: absolute;
-//   width: 16rem;
-//   height: 1.5rem;
-//   top: 20.25rem;
-//   left: 14rem;
-//   background-color: $text-dark;
-// }
-
-// .main-nav--opened .main-nav__toggle::before {
-//   transform: rotate(45deg);
-// }
-
-// .main-nav--opened .main-nav__toggle::after {
-//   transform: rotate(-45deg);
-// }
-
-// .main-nav--closed .main-nav__menu {
-//   display: none;
-
-//   @media (min-width: $desktop-width) {
-//     display: flex;
-//   }
-// }
 
 .main-nav--nojs .main-nav__toggle {
   display: none;
@@ -188,10 +172,6 @@
 .main-nav--opened .main-nav__menu {
   transform: translate(-100vw);
 }
-
-// .main-nav--closed .main-nav__menu {
-//   transform: translate(100vw);
-// }
 
 .main-nav__menu {
   position: fixed;

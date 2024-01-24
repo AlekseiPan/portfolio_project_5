@@ -27,19 +27,19 @@
 }
 
 .contacts__item--location a {
-  background-image: url(../../images/location.svg);
+  background-image: url("../../images/location.svg");
   border-bottom: 2px solid $background-container;
   transition: border-bottom-color 0.7s ease-in-out;
 }
 
 .contacts__item--phone a {
-  background-image: url(../../images/phone.svg);
+  background-image: url("../../images/phone.svg");
   border-bottom: 2px solid $background-container;
   transition: border-bottom-color 0.7s ease-in-out;
 }
 
 .contacts__item--schedule {
-  background-image: url(../../images/clock.svg);
+  background-image: url("../../images/clock.svg");
 }
 
 .contacts__item--location a:hover,
